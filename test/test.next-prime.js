@@ -20,10 +20,4 @@ suite('asyncPrime', function() {
             done();
         });
     });
-    test('asyncPrime should return the next prime number (broken)', function(done) {
-        asyncPrime(128, function(n) {
-            assert.equal(1, n, 'Wrong number');
-            done();
-        });
-    });
 });
