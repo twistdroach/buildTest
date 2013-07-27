@@ -7,7 +7,7 @@
     , "main": "index"
     , "engines": { "node": ">= 0.4.x" }
     , "scripts": {
-    "test": "mocha -u tdd"
+    "test": "mocha -u tdd -- reporter teamcity"
 }
     , "devDependencies": {
     "mocha": ">=0.3.x"
