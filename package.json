@@ -7,9 +7,9 @@
     , "main": "index"
     , "engines": { "node": ">= 0.4.x" }
     , "scripts": {
-    "test": "mocha -u tdd -- reporter teamcity"
-}
+    	"test": "mocha -u tdd --reporter teamcity"
+    }
     , "devDependencies": {
-    "mocha": ">=0.3.x"
-}
+    	"mocha": ">=0.3.x"
+    }
 }
