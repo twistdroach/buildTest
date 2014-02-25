@@ -1,15 +1,24 @@
 {
-    "name": "buildTest"
-    , "version": "0.0.1"
-    , "description": "A Mocha test"
-    , "keywords": ["test", "tutorial"]
-    , "author": "Zachary D. Rowitsch <rowitsch@yahoo.com>"
-    , "main": "index"
-    , "engines": { "node": ">= 0.4.x" }
-    , "scripts": {
-    	"test": "mocha -u tdd"
-    }
-    , "devDependencies": {
-    	"mocha": ">=0.3.x"
-    }
+  "name": "buildTest",
+  "version": "0.0.1",
+  "description": "A Mocha test",
+  "keywords": [
+    "test",
+    "tutorial"
+  ],
+  "author": "Zachary D. Rowitsch <rowitsch@yahoo.com>",
+  "main": "index",
+  "engines": {
+    "node": ">= 0.4.x"
+  },
+  "scripts": {
+    "test": "mocha -u tdd"
+  },
+  "devDependencies": {
+    "mocha": ">=0.3.x"
+  },
+  "dependencies": {
+    "coveralls": "~2.8.0",
+    "mocha-lcov-reporter": "0.0.1"
+  }
 }
