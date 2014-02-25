@@ -12,13 +12,20 @@
     "node": ">= 0.4.x"
   },
   "scripts": {
-    "test": "mocha -u tdd"
+    "travis-test": "mocha -u tdd --require blanket -R mocha-lcov-reporter | coveralls",
+    "test": "mocha -u tdd -R spec"
   },
   "devDependencies": {
     "mocha": ">=0.3.x"
   },
   "dependencies": {
     "coveralls": "~2.8.0",
-    "mocha-lcov-reporter": "0.0.1"
+    "mocha-lcov-reporter": "0.0.1",
+    "blanket": "~1.1.6"
+  },
+  "config": {
+    "blanket": {
+      "pattern": "src"
+    }
   }
 }
